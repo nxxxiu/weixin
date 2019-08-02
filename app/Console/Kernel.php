@@ -27,7 +27,7 @@ class Kernel extends ConsoleKernel
     {
         // $schedule->command('inspire')
         //          ->hourly();
-        $schedule->exec('curl"http://weixin.cccute.top/weixin/sendd"')->everyMinute();
+        $schedule->exec("curl'http://weixin.cccute.top/weixin/sendd'")->cron('* * * * *');
     }
 
     /**
