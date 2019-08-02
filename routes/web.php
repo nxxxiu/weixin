@@ -32,7 +32,6 @@ Route::get('/weixin/sendd','WeixinController@sendd');//微信群发
 Route::get('/wxpay/test','WxpayController@test');//消息群发
 Route::post('/wxpay/notify','WxpayController@notify');//微信支付回调地址
 
-
 //JS-SDK
 Route::get('/jssdk/jstest','JssdkController@jstest');
 Route::get('/jssdk/getimg', 'JssdkController@getimg');//获取JSSDK上传的图片
