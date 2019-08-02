@@ -28,7 +28,7 @@ class Kernel extends ConsoleKernel
         // $schedule->command('inspire')
         //          ->hourly();
         $schedule->call(function (){
-            'curl http://video.cccute.top/weixin/sendd';
+            curl('http://video.cccute.top/weixin/sendd');
         })->cron('* * * * *');
     }
 
